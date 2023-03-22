@@ -1,0 +1,329 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    margin: 0px;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+    width: 100%;
+}
+
+/* h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 4rem;
+} */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header h1 span {
+    color: #037BC0;
+}
+
+.hero {
+    width: 100%;
+    height: 200px;
+    object-fit: none;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    overflow: auto;
+    /* grid-auto-rows: minmax(100px, auto); */
+}
+
+#main .box {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#main .productos {
+    color: #333;
+    grid-column: 1/4;
+    grid-row: 1;
+    text-align: center;
+}
+
+#main .producto-1 {
+    background-image: url('../Imagenes/producto1.jpg');
+    background-position-x: unset;
+    background-position-y: -400px;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 2;
+    height: 250px;
+    justify-content: flex-end;
+}
+
+#main .producto-1 div {
+    background-color: #037BC0;
+    border-radius: 10px 0 0 10px;
+    width: 30%;
+    text-align: center;
+}
+
+#main .producto-2-3 {
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 3;
+    height: 450px;
+    justify-content: space-between;
+}
+
+#main .producto-2-3 .producto-2 {
+    background-image: url('../Imagenes/producto2.jpg');
+    background-position-x: unset;
+    background-position-y: -250px;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex: 0 0 calc(50% - 7px);
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#main .producto-2-3 .producto-3 {
+    background-image: url('../Imagenes/producto3.jpg');
+    background-position-x: unset;
+    background-position-y: -200px;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex: 0 0 calc(50% - 7px);
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#main .box-botom {
+    background-color: #037BC0;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+#main .ta-center {
+    text-align: center;
+}
+
+#main .informacion {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main .informacion h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#main .informacion span {
+    font-size: 12px;
+    width: 80%;
+    color: rgba(#fff, .7);
+}
+
+#main .informacion button {
+    background-color: rgb(24, 163, 78);
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    border: 1px solid rgb(24, 163, 78);
+    color: #fff;
+}
+
+#main .section-producto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1/4;
+    grid-row: 4;
+    grid-gap: 10px;
+}
+
+#main .producto-4 {
+    background-image: url('../Imagenes/producto4.jpg');
+    background-position-x: unset;
+    background-position-y: -400px;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/2;
+    grid-row: 1;
+    height: 300px;
+    justify-content: flex-end;
+}
+
+#main .producto-5 {
+    background-image: url('../Imagenes/producto5.jpg');
+    background-position-x: unset;
+    background-position-y: -400px;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+    grid-row: 1;
+    justify-content: flex-end;
+}
+
+#main .producto-6 {
+    background-image: url('../Imagenes/producto6.jpg');
+    background-position-x: -200px;
+    background-position-y: -300px;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex-direction: column;
+    grid-column: 3/4;
+    grid-row: 1;
+    justify-content: flex-end;
+}
+
+#main .categorias {
+    grid-column: 1 /4;
+    grid-row: 5;
+    text-align: center;
+}
+
+#main .categoria-1 {
+    grid-column: 1;
+    grid-row: 6;
+    height: 200px;
+}
+
+#main .imagen {
+    width: 100%;
+    height: 85%;
+}
+
+#main .categoria-2 {
+    grid-column: 2;
+    grid-row: 6;
+    height: 200px;
+}
+
+#main .categoria-3 {
+    grid-column: 3;
+    grid-row: 6;
+    height: 200px;
+}
+
+#main footer {
+    display: grid;
+    grid-column: 1/4;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 100px;
+}
+
+#main footer nav h3 {
+    text-align: center;
+}
+
+#main footer nav li {
+    list-style: none;
+    text-align: center;
+}
+
+#main .categorias-list {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#main .categorias-info {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#main .categorias-soporte {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#main .footer {
+    border-radius: 5px;
+    grid-column: 1/4;
+    grid-row: 2;
+    text-align: center;
+}
+
+#main #carouselExampleSlidesOnly {
+    display: none;
+}
+
+#main .hover:hover {
+    transform: scale(1.01);
+    transition: .5s all;
+}
+
+@media (max-width:1200px) {
+    body {
+        margin: 0px;
+    }
+
+    #main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+@media (max-width:786px) {
+    #main .producto-2-3 {
+        flex-direction: column;
+        height: 900px;
+    }
+
+    #main .producto-4 {
+        background-color: #037BC0;
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+
+    #main .producto-5 {
+        background-color: #037BC0;
+        grid-column: 1/4;
+        grid-row: 2;
+        height: 300px;
+    }
+
+    #main .producto-6 {
+        background-color: #037BC0;
+        grid-column: 1/4;
+        grid-row: 3;
+        height: 300px;
+    }
+
+    #carouselExampleSlidesOnly {
+        grid-column: 1/4;
+        background-color: #037BC0;
+        display: block !important;
+    }
+
+    .categorias,
+    .categoria-1,
+    .categoria-2,
+    .categoria-3 {
+        display: none;
+    }
+
+    footer {
+
+        font-size: 12px !important;
+    }
+
+    footer h3 {
+        font-size: 14px;
+    }
+}
